@@ -1,4 +1,4 @@
-## ibjects.com Public Website
+## ibjects.com public website
 ---
 
 Hi There 👋!
