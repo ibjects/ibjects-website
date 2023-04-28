@@ -1,0 +1,100 @@
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    background-color: #FF8EC4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    text-align: center;
+  }
+
+  
+  .tagline {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+  
+  .subtagline {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+  
+  .countdown {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+  
+  .email-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .email-input {
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .email-submit {
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    color: #FF8EC4;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .email-submit:hover {
+    background-color: #FFB6C1;
+    color: #ffffff;
+  }
+  
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #C3588F;
+
+  }
+  
+  p {
+    font-size: 20px;
+    margin-bottom: 50px;
+    max-width: 800px;
+    line-height: 1.5;
+    color: #fff;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: #C3588F;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #C3588F;
+    cursor: pointer;
+  }
+  
