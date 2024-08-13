@@ -21,11 +21,6 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            background-image: url('./assets/images/moonect/gradient_moon.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: top;
-            background-attachment: fixed;
         }
 
         .content {
@@ -63,6 +58,51 @@
         .button:hover {
             background-color: #178F81;
         }
+
+        .emoji-box {
+            width: 100px;
+            height: 100px;
+            filter: url(#pixelate-effect);
+            cursor: pointer;
+            transition: all 1s;
+            transform-origin: center;
+            transform: scale(1.6);
+            /* Removed translate(-50%, -50%) */
+            transition-timing-function: cubic-bezier(0.860, 0.000, 0.070, 1.000);
+        }
+
+        .emoji-box:hover {
+            transform: scale(2);
+            /* Adjusted for hover effect */
+        }
+
+        #svg-emojis {
+            display: block;
+            margin: auto;
+            filter: url(#liquid) url(#anaglyph3d);
+            animation: r infinite 4s;
+            transform-origin: center;
+            animation-timing-function: cubic-bezier(0.860, 0.000, 0.070, 1.000);
+        }
+
+        @keyframes r {
+            0% {
+                transform: rotate(25deg);
+            }
+
+            50% {
+                transform: rotate(-25deg);
+            }
+
+            100% {
+                transform: rotate(25deg);
+            }
+        }
+
+        #svg-emojis path {
+            opacity: 0;
+            transition: opacity 1s cubic-bezier(0.860, 0.000, 0.070, 1.000);
+        }
     </style>
 </head>
 <!-- Google tag (gtag.js) -->
@@ -77,7 +117,14 @@
 
 <body>
     <div class="content">
-        <img src="./assets/images/moonect/moonect logo.png" alt="Moonect Logo" class="overlay-image">
+        <div class="emoji-box">
+            <svg id="svg-emojis" width="70" height="70" viewBox="0 0 70 70" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10.1034 10.1054C5.83203 14.3767 5.83203 21.2513 5.83203 35.0006C5.83203 48.7498 5.83203 55.6247 10.1034 59.8959C14.3747 64.1673 21.2494 64.1673 34.9987 64.1673C48.7479 64.1673 55.6227 64.1673 59.8939 59.8959C64.1654 55.6247 64.1654 48.7498 64.1654 35.0006C64.1654 21.2513 64.1654 14.3767 59.8939 10.1054C55.6227 5.83398 48.7479 5.83398 34.9987 5.83398C21.2494 5.83398 14.3747 5.83398 10.1034 10.1054ZM29.5399 40.4958C31.0747 41.1518 32.9601 41.9577 34.9987 41.9577C37.0373 41.9577 38.9227 41.1518 40.4575 40.4958C42.8049 39.4923 44.332 38.8396 44.332 41.9577C44.332 47.1143 40.1554 51.291 34.9987 51.291C29.842 51.291 25.6654 47.1143 25.6654 41.9577C25.6654 38.8396 27.1925 39.4923 29.5399 40.4958Z"
+                    fill="white" />
+            </svg>
+        </div>
         <p class="text-line">Hey there!
 
             We’re thrilled to have you as one of the first to experience our app during its MVP beta stage. Since we’re
@@ -92,8 +139,96 @@
         </p><br />
         <a href="https://calendly.com/ibjects/general-meetup" target="_blank" class="button">Book a general meetup
             call</a>
+        <img src="./assets/images/moonect/moonect logo.png" alt="Moonect Logo" width="30px" style="margin-top: 20px;"
+            class="overlay-image">
         <pre>© 2024 ibjects</pre>
     </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" id="svg2" xml:space="preserve" width="0" height="0" oveflow="visible"
+        viewBox="0 0 500 500">
+
+        <filter id="liquid">
+
+            <feGaussianBlur stdDeviation="1" id="feGaussianBlur1" result="gaussian_blur_result1" />
+            <feComposite operator="in" in="gaussian_blur_result1" in2="result8" id="feComposite2"
+                result="composite_result1" />
+            <feGaussianBlur in="composite_result1" stdDeviation="1" id="feGaussianBlur2"
+                result="gaussian_blur_result2" />
+            <feSpecularLighting specularExponent="20" specularConstant="7" surfaceScale="5" lighting-color="#ffffff"
+                result="result1" in="gaussian_blur_result2" id="feSpecularLighting2">
+                <feDistantLight id="feDistantLight5" azimuth="45" elevation="100" />
+            </feSpecularLighting>
+            <feComposite operator="in" in="result1" in2="composite_result1" id="feComposite3" result="result2" />
+            <feComposite k1="0" k2="1" k4="0" k3="1" operator="arithmetic" result="result4" in="composite_result1"
+                in2="result2" id="feComposite4" />
+            <feComposite operator="in" in="result9" in2="result4" result="result9" id="feComposite5" />
+            <feBlend mode="multiply" in="result9" in2="result9" id="feBlend5" />
+            <feFlood flood-color="cyan" flood-opacity=".8" result="flood2" />
+            <feComposite in="flood2" in2="SourceAlpha" operator="in" result="mask2" />
+            <feGaussianBlur in="mask2" stdDeviation="3" result="blur2" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="result9" />
+            </feMerge>
+        </filter>
+
+        <filter id="anaglyph3d">
+            <feOffset in="SourceGraphic" dx="-4" dy="0" result="left" />
+            <feOffset in="SourceGraphic" dx="4" dy="0" result="right" />
+            <feComponentTransfer in="left" result="leftRed">
+                <feFuncR type="identity"></feFuncR>
+                <feFuncG type="discrete" tableValues="0"></feFuncG>
+                <!--      <feFuncB type="discrete" tableValues="0"></feFuncB> -->
+            </feComponentTransfer>
+            <feComponentTransfer in="right" result="rightCyan">
+                <feFuncR type="discrete" tableValues="0"></feFuncR>
+                <feFuncG type="identity"></feFuncG>
+                <feFuncB type="identity"></feFuncB>
+            </feComponentTransfer>
+            <feBlend in="leftRed" in2="rightCyan" mode="screen" />
+        </filter>
+
+        <filter id="pixelate-effect" x="0" y="0">
+            <feFlood x="0" y="0" height="2" width="2" />
+            <feComposite width="2" height="4" />
+            <feTile x="0" y="0" width="1000" height="1000" result="c" />
+            <feComposite in="SourceGraphic" in2="c" operator="in" />
+            <feMorphology operator="dilate" radius=".5" />
+        </filter>
+
+        <filter id="noise">
+            <feTurbulence type="fractalNoise" baseFrequency="0.002" numOctaves="1" seed="1" result="noise">
+                <animate attributeName="baseFrequency" values="0.002;0.01;0.002" dur="8s" repeatCount="indefinite" />
+            </feTurbulence>
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="20">
+                <animate attributeName="scale" values="20; 12; 20" dur="2s" repeatCount="indefinite" />
+            </feDisplacementMap>
+    </svg>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const paths = document.querySelectorAll("#svg-emojis path");
+            let currentIndex = 0;
+            function showNextPath() {
+                paths.forEach(path => path.style.display = "none");
+                paths[currentIndex].style.display = "block";
+
+                paths.forEach(path => path.style.opacity = 0);
+                paths[currentIndex].style.opacity = 1;
+
+                currentIndex = (currentIndex + 1) % paths.length;
+            }
+            paths.forEach(path => path.style.display = "none");
+            paths[0].style.display = "block";
+
+            paths.forEach(path => path.style.opacity = 0);
+            paths[0].style.opacity = 1;
+
+            setInterval(showNextPath, 2000);
+        });
+    </script>
+
+
 </body>
 
 </html>
