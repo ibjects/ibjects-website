@@ -17,10 +17,17 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Themify Icons -->
     <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Owl carousel -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <!-- Main css -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/app-icon-small.png">
+    <!-- (optional) iOS/Android home-screen icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/app-icon-small.png">
 </head>
 
 <body data-spy="scroll" data-target="#navbar" data-offset="30">
@@ -41,10 +48,10 @@
                                 <li class="nav-item"> <a class="nav-link active" href="#home">HOME <span
                                             class="sr-only">(current)</span></a> </li>
                                 <li class="nav-item"> <a class="nav-link" href="#features">FEATURES</a> </li>
-                                <li class="nav-item"> <a class="nav-link" href="#gallery">GALLERY</a> </li>
-                                <li class="nav-item"> <a class="nav-link" href="#pricing">PRICING</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#faqs">FAQs</a> </li>
+                                <!-- <li class="nav-item"> <a class="nav-link" href="#pricing">PRICING</a> </li> -->
                                 <li class="nav-item"> <a class="nav-link" href="#contact">CONTACT</a> </li>
-                                <li class="nav-item"><a href="#"
+                                <li class="nav-item"><a href="#contact"
                                         class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">Download</a></li>
                             </ul>
                         </div>
@@ -58,18 +65,22 @@
     <header class="bg-gradient" id="home">
         <div class="container mt-5">
             <h1>Pailo - Your AI Buddy</h1>
-            <p class="tagline">Your personal AI companion that understands, assists, and grows with you. Experience the
-                future of digital friendship
-                today.</p>
+            <p class="tagline">Chat, learn, create, and play—your digital adventure begins now!</p>
+        </div>
+        <div class="my-4">
+            <a href="https://apps.apple.com/us/app/pailo/id6743004802" target="_blank" class="btn btn-light"><img
+                    src="images/appleicon.png" alt="icon"> App Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.ibjects.pailo" target="_blank"
+                class="btn btn-light"><img src="images/playicon.png" alt="icon"> Google play</a>
         </div>
         <div class="img-holder mt-3"><img src="images/iphonex.png" alt="phone" class="img-fluid"></div>
     </header>
 
-    <div class="client-logos my-5">
+    <!-- <div class="client-logos my-5">
         <div class="container text-center">
             <img src="images/client-logos.png" alt="client logos" class="img-fluid">
         </div>
-    </div>
+    </div> -->
 
     <div class="section light-bg" id="features">
 
@@ -77,8 +88,8 @@
         <div class="container">
 
             <div class="section-title">
-                <small>HIGHLIGHTS</small>
-                <h3>Features you love</h3>
+                <small>EXPLORE WITH PAILO</small>
+                <h3>Your Friendly AI Companion</h3>
             </div>
 
 
@@ -89,9 +100,9 @@
                             <div class="media">
                                 <span class="ti-face-smile gradient-fill ti-3x mr-3"></span>
                                 <div class="media-body">
-                                    <h4 class="card-title">Simple</h4>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Integer rutrum, urna eu pellentesque </p>
+                                    <h4 class="card-title">Create & Customize</h4>
+                                    <p class="card-text">Make your avatar truly yours! Style outfits, change hairstyles,
+                                        and show off your personality.</p>
                                 </div>
                             </div>
                         </div>
@@ -101,11 +112,11 @@
                     <div class="card features">
                         <div class="card-body">
                             <div class="media">
-                                <span class="ti-settings gradient-fill ti-3x mr-3"></span>
+                                <span class="ti-comments gradient-fill ti-3x mr-3"></span>
                                 <div class="media-body">
-                                    <h4 class="card-title">Customize</h4>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Integer rutrum, urna eu pellentesque </p>
+                                    <h4 class="card-title">Ask & Discover</h4>
+                                    <p class="card-text">Questions? Curiosities? Ask freely—Pailo answers with fun and
+                                        friendly explanations every time.</p>
                                 </div>
                             </div>
                         </div>
@@ -117,9 +128,9 @@
                             <div class="media">
                                 <span class="ti-lock gradient-fill ti-3x mr-3"></span>
                                 <div class="media-body">
-                                    <h4 class="card-title">Secure</h4>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Integer rutrum, urna eu pellentesque </p>
+                                    <h4 class="card-title">Play & Grow Safely</h4>
+                                    <p class="card-text">Play exciting games, learn new facts, and enjoy a secure,
+                                        worry-free experience every day.</p>
                                 </div>
                             </div>
                         </div>
@@ -138,11 +149,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-6">
-                    <div class="box-icon"><span class="ti-mobile gradient-fill ti-3x"></span></div>
-                    <h2>Discover our App</h2>
-                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati vel
-                        exercitationem eveniet vero maxime ratione </p>
-                    <a href="#" class="btn btn-primary">Read more</a>
+                    <!-- <div class="box-icon"><span class="ti-mobile gradient-fill ti-3x"></span></div> -->
+                    <!-- <h2>Bring Your Avatar to Life</h2> -->
+                    <p class="mb-4">At Pailo, we believe every child deserves a friendly companion to explore, learn,
+                        and have fun with. We created Pailo—a
+                        safe, interactive, and customizable AI avatar buddy—so kids can freely express themselves,
+                        discover new things, and
+                        enjoy endless adventures.
+                    <p>Join us in making learning exciting, creativity limitless, and
+                        playtime unforgettable!
+                        exactly the way you want!</p>
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Read more</a> -->
                 </div>
             </div>
             <div class="perspective-phone">
@@ -157,116 +175,107 @@
     <div class="section light-bg">
         <div class="container">
             <div class="section-title">
-                <small>FEATURES</small>
-                <h3>Do more with our app</h3>
+                <small>ENDLESS WAYS TO PLAY</small>
+                <h3>Explore, Create, & Connect</h3>
             </div>
 
             <ul class="nav nav-tabs nav-justified" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#communication">Communication</a>
+                    <a class="nav-link active" data-toggle="tab" href="#communication">Chat & Learn</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#schedule">Scheduling</a>
+                    <a class="nav-link" data-toggle="tab" href="#fun">Daily Activities</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#messages">Messages</a>
+                    <a class="nav-link" data-toggle="tab" href="#games">Fun Games</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#livechat">Live Chat</a>
+                    <a class="nav-link" data-toggle="tab" href="#customize">Customize More</a>
                 </li>
             </ul>
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="communication">
                     <div class="d-flex flex-column flex-lg-row">
-                        <img src="images/graphic.png" alt="graphic"
-                            class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                        <!-- <img src="images/graphic.png" alt="graphic"
+                            class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0"> -->
+                        <span class="ti-comment gradient-fill ti-3x mr-3"></span>
                         <div>
 
-                            <h2>Communicate with ease</h2>
-                            <p class="lead">Uniquely underwhelm premium outsourcing with proactive leadership skills.
+                            <h2>Chat Anytime</h2>
+                            <p class="lead">Friendly conversations just for you.</p>
+                            <p>Talk about anything, from science facts to your favorite hobbies. Pailo always has
+                                something cool to share.
                             </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu
-                                pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien.
-                                Vestibulum sit amet mattis ante. Ut placerat dui eu nulla
-                                congue tincidunt ac a nibh. Mauris accumsan pulvinar lorem placerat volutpat. Praesent
-                                quis facilisis elit. Sed condimentum neque quis ex porttitor,
-                            </p>
-                            <p> malesuada faucibus augue aliquet. Sed elit est, eleifend sed dapibus a, semper a eros.
+                            <!-- <p> malesuada faucibus augue aliquet. Sed elit est, eleifend sed dapibus a, semper a eros.
                                 Vestibulum blandit vulputate pharetra. Phasellus lobortis leo a nisl euismod, eu
                                 faucibus justo sollicitudin. Mauris consectetur, tortor
                                 sed tempor malesuada, sem nunc porta augue, in dictum arcu tortor id turpis. Proin
                                 aliquet vulputate aliquam.
-                            </p>
+                            </p> -->
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="schedule">
+                <div class="tab-pane fade" id="fun">
                     <div class="d-flex flex-column flex-lg-row">
+                        <span class="ti-comments-smiley gradient-fill ti-3x mr-3"></span>
                         <div>
-                            <h2>Scheduling when you want</h2>
-                            <p class="lead">Uniquely underwhelm premium outsourcing with proactive leadership skills.
+                            <h2>Fun Activities</h2>
+                            <p class="lead">Something exciting every day.</p>
+                            <p>Enjoy engaging games and creative activities with Pailo, making each day a fun adventure.
                             </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu
-                                pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien.
-                                Vestibulum sit amet mattis ante. Ut placerat dui eu nulla
-                                congue tincidunt ac a nibh. Mauris accumsan pulvinar lorem placerat volutpat. Praesent
-                                quis facilisis elit. Sed condimentum neque quis ex porttitor,
-                            </p>
-                            <p> malesuada faucibus augue aliquet. Sed elit est, eleifend sed dapibus a, semper a eros.
+                            <!-- <p> malesuada faucibus augue aliquet. Sed elit est, eleifend sed dapibus a, semper a eros.
                                 Vestibulum blandit vulputate pharetra. Phasellus lobortis leo a nisl euismod, eu
                                 faucibus justo sollicitudin. Mauris consectetur, tortor
                                 sed tempor malesuada, sem nunc porta augue, in dictum arcu tortor id turpis. Proin
                                 aliquet vulputate aliquam.
-                            </p>
+                            </p> -->
                         </div>
-                        <img src="images/graphic.png" alt="graphic"
-                            class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                        <!-- <img src="images/graphic.png" alt="graphic"
+                            class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0"> -->
                     </div>
                 </div>
-                <div class="tab-pane fade" id="messages">
+                <div class="tab-pane fade" id="games">
                     <div class="d-flex flex-column flex-lg-row">
-                        <img src="images/graphic.png" alt="graphic"
-                            class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                        <!-- <img src="images/graphic.png" alt="graphic"
+                            class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0"> -->
+                        <span class="ti-game gradient-fill ti-3x mr-3"></span>
+
                         <div>
-                            <h2>Realtime Messaging service</h2>
-                            <p class="lead">Uniquely underwhelm premium outsourcing with proactive leadership skills.
+                            <h2>Play Together</h2>
+                            <p class="lead">Fun interactive games await you.
                             </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu
-                                pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien.
-                                Vestibulum sit amet mattis ante. Ut placerat dui eu nulla
-                                congue tincidunt ac a nibh. Mauris accumsan pulvinar lorem placerat volutpat. Praesent
-                                quis facilisis elit. Sed condimentum neque quis ex porttitor,
+                            <p>Play word association games, trivia, and quizzes to test your knowledge and have fun with
+                                your avatar buddy.
                             </p>
-                            <p> malesuada faucibus augue aliquet. Sed elit est, eleifend sed dapibus a, semper a eros.
+                            <!-- <p> malesuada faucibus augue aliquet. Sed elit est, eleifend sed dapibus a, semper a eros.
                                 Vestibulum blandit vulputate pharetra. Phasellus lobortis leo a nisl euismod, eu
                                 faucibus justo sollicitudin. Mauris consectetur, tortor
                                 sed tempor malesuada, sem nunc porta augue, in dictum arcu tortor id turpis. Proin
                                 aliquet vulputate aliquam.
-                            </p>
+                            </p> -->
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="livechat">
+                <div class="tab-pane fade" id="customize">
                     <div class="d-flex flex-column flex-lg-row">
+                        <span class="ti-bolt gradient-fill ti-3x mr-3"></span>
+
                         <div>
-                            <h2>Live chat when you needed</h2>
-                            <p class="lead">Uniquely underwhelm premium outsourcing with proactive leadership skills.
+                            <h2>Style Your Avatar</h2>
+                            <p class="lead">Express your creativity.
                             </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu
-                                pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien.
-                                Vestibulum sit amet mattis ante. Ut placerat dui eu nulla
-                                congue tincidunt ac a nibh. Mauris accumsan pulvinar lorem placerat volutpat. Praesent
-                                quis facilisis elit. Sed condimentum neque quis ex porttitor,
+                            <p>Personalize your avatar's look with outfits, hairstyles, accessories, and animations that
+                                show your unique style.
                             </p>
-                            <p> malesuada faucibus augue aliquet. Sed elit est, eleifend sed dapibus a, semper a eros.
+                            <!-- <p> malesuada faucibus augue aliquet. Sed elit est, eleifend sed dapibus a, semper a eros.
                                 Vestibulum blandit vulputate pharetra. Phasellus lobortis leo a nisl euismod, eu
                                 faucibus justo sollicitudin. Mauris consectetur, tortor
                                 sed tempor malesuada, sem nunc porta augue, in dictum arcu tortor id turpis. Proin
                                 aliquet vulputate aliquam.
-                            </p>
+                            </p> -->
                         </div>
-                        <img src="images/graphic.png" alt="graphic"
-                            class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                        <!-- <img src="images/graphic.png" alt="graphic"
+                            class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0"> -->
                     </div>
                 </div>
             </div>
@@ -276,31 +285,37 @@
     </div>
     <!-- // end .section -->
 
-    <div class="section">
+    <!-- <div class="section">
 
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="images/dualphone.png" alt="dual phone" class="img-fluid">
+                    <img src="images/iphonex.png" alt="dual phone" class="img-fluid">
                 </div>
                 <div class="col-md-6 d-flex align-items-center">
                     <div>
                         <div class="box-icon"><span class="ti-rocket gradient-fill ti-3x"></span></div>
-                        <h2>Launch your App</h2>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati vel
-                            exercitationem eveniet vero maxime ratione </p>
-                        <a href="#" class="btn btn-primary">Read more</a>
+                        <h2>Ready, Set, Adventure!</h2>
+                        <p class="mb-4">Download Pailo today and start your fun-filled journey of discovery and
+                            creativity with your own AI avatar buddy!</p>
+                        <a href="####" class="btn btn-primary">Read more</a>
+                        <div class="my-4">
+                            <a href="https://apps.apple.com/us/app/pailo/id6743004802" target="_blank"
+                                class="btn btn-light"><img src="images/appleicon.png" alt="icon"> App Store</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.ibjects.pailo" target="_blank"
+                                class="btn btn-light"><img src="images/playicon.png" alt="icon"> Google play</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
         </div>
 
-    </div>
+    </div> -->
     <!-- // end .section -->
 
 
-    <div class="section light-bg">
+    <!-- <div class="section light-bg">
 
         <div class="container">
             <div class="row">
@@ -340,11 +355,11 @@
 
         </div>
 
-    </div>
+    </div> -->
     <!-- // end .section -->
 
 
-    <div class="section">
+    <!-- <div class="section">
         <div class="container">
             <div class="section-title">
                 <small>TESTIMONIALS</small>
@@ -380,33 +395,11 @@
 
         </div>
 
-    </div>
+    </div> -->
     <!-- // end .section -->
 
 
-    <div class="section light-bg" id="gallery">
-        <div class="container">
-            <div class="section-title">
-                <small>GALLERY</small>
-                <h3>App Screenshots</h3>
-            </div>
-
-            <div class="img-gallery owl-carousel owl-theme">
-                <img src="images/screen1.jpg" alt="image">
-                <img src="images/screen2.jpg" alt="image">
-                <img src="images/screen3.jpg" alt="image">
-                <img src="images/screen1.jpg" alt="image">
-            </div>
-
-        </div>
-
-    </div>
-    <!-- // end .section -->
-
-
-
-
-
+    <!-- 
     <div class="section" id="pricing">
         <div class="container">
             <div class="section-title">
@@ -464,43 +457,42 @@
                     </div>
                 </div>
             </div>
-            <!-- // end .pricing -->
+            
 
 
         </div>
 
-    </div>
+    </div> -->
     <!-- // end .section -->
 
 
-    <div class="section pt-0">
+    <div class="section" id="faqs">
         <div class="container">
             <div class="section-title">
                 <small>FAQ</small>
-                <h3>Frequently Asked Questions</h3>
+                <h3>Got Questions? We've Got Answers!</h3>
             </div>
 
             <div class="row pt-4">
                 <div class="col-md-6">
-                    <h4 class="mb-3">Can I try before I buy?</h4>
-                    <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum,
-                        urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien.
-                        Vestibulum sit amet mattis ante. </p>
-                    <h4 class="mb-3">What payment methods do you accept?</h4>
-                    <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum,
-                        urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien.
-                        Vestibulum sit amet mattis ante. </p>
+                    <h4 class="mb-3">Is Pailo safe for kids?</h4>
+                    <p class="light-font mb-5">Yes—Pailo is carefully designed with safety and privacy as our top
+                        priority. Perfect for curious kids aged 9–14 who love games, creativity, and
+                        learning.</p>
+                    <h4 class="mb-3">What is Pailo?</h4>
+                    <p class="light-font mb-5">Pailo is a avatar friend that helps you with your daily tasks and
+                        provides you with useful tips and ideas. To get started, simply download our app from Play or
+                        App store.</p>
+
 
                 </div>
                 <div class="col-md-6">
-                    <h4 class="mb-3">Can I change my plan later?</h4>
-                    <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum,
-                        urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien.
-                        Vestibulum sit amet mattis ante. </p>
-                    <h4 class="mb-3">Do you have a contract?</h4>
-                    <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum,
-                        urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien.
-                        Vestibulum sit amet mattis ante. </p>
+                    <h4 class="mb-3">How is the data protected?</h4>
+                    <p class="light-font mb-5">Your data is securely stored in our servers and no third party has access
+                        to any of the data. You can submit a request to delete all the data anytime.</p>
+                    <h4 class="mb-3">Are there free features available?</h4>
+                    <p class="light-font mb-5">Yes! You can chat, play, and customize your avatar totally free. You can
+                        buy different avatar items to customize avatar items and more interactions with the avatar.</p>
 
                 </div>
             </div>
@@ -509,22 +501,44 @@
     </div>
     <!-- // end .section -->
 
+    <div class="section pt-0" id="gallery">
+        <div class="container">
+            <!-- <div class="section-title">
+                <small>GALLERY</small>
+                <h3>Pailo in Action</h3>
+            </div> -->
 
+            <div class="img-gallery owl-carousel owl-theme">
+                <img src="images/screen1.png" alt="image">
+                <img src="images/screen2.png" alt="image">
+                <img src="images/screen3.png" alt="image">
+                <img src="images/screen4.png" alt="image">
+                <img src="images/screen5.png" alt="image">
+                <img src="images/screen6.png" alt="image">
+            </div>
+
+        </div>
+
+    </div>
+    <!-- // end .section -->
 
     <div class="section bg-gradient">
         <div class="container">
             <div class="call-to-action">
 
-                <div class="box-icon"><span class="ti-mobile gradient-fill ti-3x"></span></div>
-                <h2>Download Anywhere</h2>
-                <p class="tagline">Available for all major mobile and desktop platforms. Rapidiously visualize optimal
-                    ROI rather than enterprise-wide methods of empowerment. </p>
+                <!-- <div class="box-icon"><span class="ti-mobile gradient-fill ti-3x"></span></div> -->
+                <img src="images/app-icon-small.png" alt="pailo-icon" class="app-icon pb-4">
+                <h2>Ready, Set, Adventure!</h2>
+                <p class="tagline">Download Pailo today and start your fun-filled journey of discovery and creativity
+                    with your own AI avatar buddy!</p>
                 <div class="my-4">
-
-                    <a href="#" class="btn btn-light"><img src="images/appleicon.png" alt="icon"> App Store</a>
-                    <a href="#" class="btn btn-light"><img src="images/playicon.png" alt="icon"> Google play</a>
+                    <a href="https://apps.apple.com/us/app/pailo/id6743004802" target="_blank"
+                        class="btn btn-light"><img src="images/appleicon.png" alt="icon"> App Store</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.ibjects.pailo" target="_blank"
+                        class="btn btn-light"><img src="images/playicon.png" alt="icon"> Google play</a>
                 </div>
-                <p class="text-primary"><small><i>*Works on iOS 10.0.5+, Android Kitkat and above. </i></small></p>
+                <p class="text-primary"><small>Available on Android and iOS—grab your new AI buddy and never stop the
+                        fun.</small></p>
             </div>
         </div>
 
@@ -533,30 +547,30 @@
 
     <div class="light-bg py-5" id="contact">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 text-center text-lg-left">
-                    <p class="mb-2"> <span class="ti-location-pin mr-2"></span> 1485 Pacific St, Brooklyn, NY 11216 USA
-                    </p>
-                    <div class=" d-block d-sm-inline-block">
-                        <p class="mb-2">
-                            <span class="ti-email mr-2"></span> <a class="mr-4"
-                                href="mailto:support@mobileapp.com">support@pailo.com</a>
-                        </p>
-                    </div>
-                    <div class="d-block d-sm-inline-block">
+            <div class="row justify-content-center">
+                <!-- <div class="col-lg-6 text-center text-lg-left"> -->
+                <!-- <p class="mb-2"> <span class="ti-location-pin mr-2"></span> 1485 Pacific St, Brooklyn, NY 11216 USA
+                    </p> -->
+                <!-- <div class=" d-block d-sm-inline-block"> -->
+                <!-- <p class="mb-2">
+                        <span class="ti-email mr-2"></span> <a class="mr-4"
+                            href="mailto:comm@ibjects.com">comm@ibjects.com</a>
+                    </p> -->
+                <!-- </div> -->
+                <!-- <div class="d-block d-sm-inline-block">
                         <p class="mb-0">
                             <span class="ti-headphone-alt mr-2"></span> <a href="tel:51836362800">518-3636-2800</a>
                         </p>
-                    </div>
+                    </div> -->
 
+                <!-- </div> -->
+                <!-- <div class="col-lg-6"> -->
+                <div class="social-icons">
+                    <a href="#"><span class="fab fa-snapchat"></span></a>
+                    <a href="#"><span class="fab fa-x-twitter"></span></a>
+                    <a href="#"><span class="fab fa-instagram"></span></a>
                 </div>
-                <div class="col-lg-6">
-                    <div class="social-icons">
-                        <a href="#"><span class="ti-facebook"></span></a>
-                        <a href="#"><span class="ti-twitter-alt"></span></a>
-                        <a href="#"><span class="ti-instagram"></span></a>
-                    </div>
-                </div>
+                <!-- </div> -->
             </div>
 
         </div>
@@ -568,9 +582,9 @@
         <p class="mb-2"><small>© 2025 Pailo</small></p>
 
         <small>
-            <a href="#" class="m-2">PRESS</a>
-            <a href="#" class="m-2">TERMS</a>
-            <a href="#" class="m-2">PRIVACY</a>
+            <!-- <a href="#" class="m-2">PRESS</a>
+            <a href="#" class="m-2">TERMS</a> -->
+            <a href="https://www.ibjects.com/pailo-privacy-policy" target="_blank" class="m-2">PRIVACY POLICY</a>
         </small>
     </footer>
 
